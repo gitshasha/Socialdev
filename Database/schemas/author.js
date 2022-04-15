@@ -5,18 +5,10 @@ export default {
   fields: [
     {
       name: "name",
-      title: "Name",
+      title: "name",
       type: "string",
     },
-    {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
-      options: {
-        source: "name",
-        maxLength: 96,
-      },
-    },
+    { name: "email", title: "email", type: "string" },
     {
       name: "image",
       title: "Image",
@@ -24,6 +16,13 @@ export default {
       options: {
         hotspot: true,
       },
+    },
+    {
+      name: "friends",
+      title: "Friends",
+
+      type: "array",
+      of: [{ type: "reference", to: { type: "author" } }],
     },
     {
       name: "bio",
