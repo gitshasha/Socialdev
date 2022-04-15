@@ -1,3 +1,3 @@
-/api/node_modules
-/Database/node_modules
-/socialmedia/node_modules
+/api/_nodemodules
+/socialmedia/_nodemodules
+/Database/_nodemodules
